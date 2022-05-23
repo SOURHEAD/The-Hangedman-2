@@ -1,8 +1,8 @@
 //Here we are importing all the modules.
 
-#include <stdio.h>
+#include <cstdio>
 #include <stdlib.h>
-#include <time.h>
+#include <ctime>
 #include <string.h>
 #include <string>
 #include <iostream>
@@ -149,7 +149,16 @@ public:
     string username;
     string password;
     User(string username1,string password1){
-        read(username1,password1);
+        while(read(user_name,pass_word)){
+            cout<<"Wrong login info, Try again"<<endl;
+            cout<<"Enter username:\n";
+            cin>>user_name;
+            cout<<"Enter password(IN NUMERIC ONLY):\n";
+            cin>>pass_word;
+            read(user_name,pass_word);
+        }
+            cout<<"Login Successful"<<endl;
+
     }
     User(){
 
