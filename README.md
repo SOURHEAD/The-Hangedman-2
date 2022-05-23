@@ -1,4 +1,4 @@
-# The-Hangedman-2.0
+# The-Hangedman-2
 The game hangman but much more interactive, made with cpp.
 
 
